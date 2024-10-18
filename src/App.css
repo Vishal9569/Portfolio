@@ -1,0 +1,355 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  scroll-behavior: smooth;
+
+}
+
+
+.MainNav {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 10vh;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  background: linear-gradient(90deg, #a44563, #1D2671);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 2rem;
+  flex-grow: 1;
+}
+
+.right-div {
+  display: flex;
+  align-items: center;
+}
+
+.MainNav a {
+  margin-left: 0.3rem;
+  padding: 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+
+.Profile {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+
+}
+
+.Profile h2 {
+  background: linear-gradient(90deg, #9777bb, #555a59);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 4rem;
+  margin-left: 0.5rem;
+}
+
+.dynamicText {
+  background: linear-gradient(90deg, #56877b, #f19b9b);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  position: absolute;
+  top: 43%;
+  left: 14%;
+  transform: translateY(60%);
+  font-size: 1.5rem;
+  color: #333;
+  z-index: 10;
+}
+
+.ProflieName {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  margin-right: 2rem;
+  width: 45%;
+  height: 100%;
+  border-radius: 0.3rem;
+
+
+}
+
+.ProflieName h1 {
+  font-size: 2rem;
+
+}
+
+.ProflieName p {
+  font-size: 1rem;
+  color: #333;
+  width: 30rem;
+
+}
+
+.imgDig {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgDig img {
+  box-shadow: 0 2px 2px 0 rgba(242, 239, 239, 0.1), 0 2px 2px 0 rgba(113, 113, 113, 0.1);
+  width: 19rem;
+  height: 20rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.textDiv {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.logo {
+  display: flex;
+
+  justify-content: space-between;
+  margin-top: 1rem;
+
+}
+
+.logo img {
+  box-shadow: 0 2px 2px 0 rgba(242, 239, 239, 0.1), 0 2px 2px 0 rgba(113, 113, 113, 0.1);
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 0.5rem;
+  margin-left: 0.2rem;
+}
+
+.ProjectSection {
+  display: flex;
+  flex-direction: column;
+  background-color: azure;
+  gap: 1rem;
+  padding-bottom: 2rem;
+}
+
+.ProjectSection h1 {
+  display: inline;
+  text-align: center;
+  background: linear-gradient(90deg, #a44563, #1D2671);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+.Project1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.Project1 img {
+  box-shadow: 5px 8px 20px 5px rgba(111, 106, 106, 0.1), 5px 8px 20px 5px rgba(95, 89, 89, 0.1);
+
+  height: 20rem;
+  width: 20rem;
+  border: none;
+  border-radius: 1rem;
+}
+
+.ProjectText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 30rem;
+  margin: 0;
+}
+
+.ProjectText h2 {
+  background: linear-gradient(90deg, #a44563, #1D2671);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.divHashtag {
+  display: flex;
+  justify-content: space-evenly;
+  width: 20rem;
+}
+
+.divHashtag p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  font-size: large;
+  background-color: darkgray;
+  height: 2rem;
+  width: 3.5rem;
+}
+
+
+.ConnectMe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 2rem;
+  background-color: #fff;
+  margin-top: 2rem;
+}
+
+.ConnectMe h2 {
+  background-color: cadetblue;
+  height: 4rem;
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+
+}
+
+.mainForm {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  width: 80%;
+}
+
+.mainForm img {
+  margin-top: 3rem;
+  border-radius: 1rem;
+  width: 20rem;
+  height: 20rem;
+
+}
+
+.Contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 0.5px solid black;
+  width: 90vh;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.Contact-form input {
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(19, 18, 18);
+  font-size: large;
+}
+
+
+.NameDiv,
+.EmailDiv,
+.MessageBox {
+  display: flex;
+  flex-direction: column;
+  width: 35rem;
+  margin-left: 2.5rem;
+
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #43889b;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+  height: 2.2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  align-self: center;
+
+}
+
+
+
+button:hover {
+  background-color: #225260;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .MainNav {
+    flex-direction: column;
+    /* Stack nav items vertically */
+    align-items: flex-start;
+    /* Align items to the left */
+  }
+
+  .Profile {
+    flex-direction: column;
+    /* Stack profile info vertically */
+    align-items: center;
+    /* Center align the profile */
+  }
+
+  .ProflieName {
+    width: 80%;
+    /* Make the profile name section wider */
+  }
+
+  .imgDig img {
+    width: 15rem;
+    /* Adjust the profile image size */
+    height: auto;
+    /* Maintain aspect ratio */
+  }
+
+  .mainForm {
+    flex-direction: column;
+    /* Stack form and image vertically */
+    align-items: center;
+    /* Center align form items */
+  }
+
+  .Contact-form input,
+  .Contact-form textarea {
+    width: 100%;
+    /* Full width inputs for better responsiveness */
+  }
+
+  .Project1 {
+    flex-direction: column;
+    /* Stack project elements vertically */
+    align-items: center;
+    /* Center align project items */
+  }
+
+  .ProjectText {
+    width: 90%;
+    /* Adjust project text width */
+    text-align: center;
+    /* Center align text */
+  }
+
+  .divHashtag {
+    justify-content: center;
+    /* Center align hashtags */
+  }
+
+  /* Additional styles as needed for other components */
+}
