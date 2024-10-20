@@ -48,17 +48,6 @@ export function ContactForm() {
                     </div>
                     <button type="submit"><IoIosSend /> Send Message</button>
                 </form>
-                <form name="contact" netlify className="Contact-form">
-                    <p>
-                        <label>Name <input type="text" name="name" /></label>
-                    </p>
-                    <p>
-                        <label>Email <input type="email" name="email" /></label>
-                    </p>
-                    <p>
-                        <button type="submit">Send</button>
-                    </p>
-                </form>
 
             </div>
         </div>
