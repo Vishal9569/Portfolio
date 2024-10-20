@@ -31,7 +31,7 @@ export function ContactForm() {
             <h2>Connect Us</h2>
             <div className="mainForm">
                 <img src="./connect.png" alt="Connect" />
-                <form name="contact" netlify className="Contact-form">
+                <form name="contact" className="Contact-form" netlify>
                     <div className="NameDiv">
                         <p><BsFillPersonFill /> Name</p>
                         <input type="text" name="name" required />
