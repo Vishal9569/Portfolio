@@ -1,15 +1,16 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #fff;
-  scroll-behavior: smooth;
+
+  background-color: linear-gradient(to bottom right, #36d1f7, #dfda46, #e06303);
+  scroll-behavior: scroll;
 
 }
 
 
 .MainNav {
   display: flex;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   min-height: 10vh;
   align-items: center;
   position: sticky;
@@ -21,7 +22,8 @@ body {
 }
 
 h1 {
-  background: linear-gradient(90deg, #a44563, #1D2671);
+  background-color: linear-gradient(90deg, #a44563, #1D2671);
+
   background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-left: 2rem;
@@ -51,7 +53,7 @@ h1 {
 }
 
 .Profile h2 {
-  background: linear-gradient(90deg, #9777bb, #555a59);
+  background-color: linear-gradient(90deg, #9777bb, #555a59);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 4rem;
@@ -59,7 +61,7 @@ h1 {
 }
 
 .dynamicText {
-  background: linear-gradient(90deg, #56877b, #f19b9b);
+  background-color: linear-gradient(90deg, #56877b, #f19b9b);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 
@@ -137,7 +139,7 @@ h1 {
 .ProjectSection {
   display: flex;
   flex-direction: column;
-  background-color: azure;
+  background-color: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   gap: 1rem;
   padding-bottom: 2rem;
 }
@@ -145,7 +147,7 @@ h1 {
 .ProjectSection h1 {
   display: inline;
   text-align: center;
-  background: linear-gradient(90deg, #a44563, #1D2671);
+  background-color: linear-gradient(90deg, #a44563, #1D2671);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -159,7 +161,7 @@ h1 {
 }
 
 .Project1 img {
-  box-shadow: 5px 8px 20px 5px rgba(111, 106, 106, 0.1), 5px 8px 20px 5px rgba(95, 89, 89, 0.1);
+  box-shadow: 5px 8px 20px 5px rgba(238, 234, 234, 0.1), 5px 8px 20px 5px rgba(95, 89, 89, 0.1);
 
   height: 20rem;
   width: 20rem;
@@ -177,7 +179,7 @@ h1 {
 }
 
 .ProjectText h2 {
-  background: linear-gradient(90deg, #a44563, #1D2671);
+  background-color: linear-gradient(90deg, #a44563, #1D2671);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -206,12 +208,11 @@ h1 {
   align-items: center;
   width: 100%;
   padding-bottom: 2rem;
-  background-color: #fff;
-  margin-top: 2rem;
+  background-color: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
 }
 
 .ConnectMe h2 {
-  background-color: cadetblue;
+  box-shadow: 5px 8px 20px 5px rgba(106, 103, 103, 0.1), 5px 8px 20px 5px rgba(64, 61, 61, 0.1);
   height: 4rem;
   width: 10rem;
   display: flex;
@@ -250,6 +251,7 @@ h1 {
 }
 
 .Contact-form input {
+
   padding: 0.4rem;
   border-radius: 0.5rem;
   border: 1px solid rgb(19, 18, 18);
@@ -295,61 +297,47 @@ button:hover {
 @media (min-width: 768px) and (max-width: 1024px) {
   .MainNav {
     flex-direction: column;
-    /* Stack nav items vertically */
     align-items: flex-start;
-    /* Align items to the left */
   }
 
   .Profile {
     flex-direction: column;
-    /* Stack profile info vertically */
     align-items: center;
-    /* Center align the profile */
   }
 
   .ProflieName {
     width: 80%;
-    /* Make the profile name section wider */
   }
 
   .imgDig img {
     width: 15rem;
-    /* Adjust the profile image size */
     height: auto;
-    /* Maintain aspect ratio */
   }
 
   .mainForm {
     flex-direction: column;
-    /* Stack form and image vertically */
     align-items: center;
-    /* Center align form items */
   }
 
   .Contact-form input,
   .Contact-form textarea {
     width: 100%;
-    /* Full width inputs for better responsiveness */
   }
 
   .Project1 {
     flex-direction: column;
-    /* Stack project elements vertically */
     align-items: center;
-    /* Center align project items */
   }
 
   .ProjectText {
     width: 90%;
-    /* Adjust project text width */
     text-align: center;
-    /* Center align text */
   }
 
   .divHashtag {
     justify-content: center;
-    /* Center align hashtags */
+
   }
 
-  /* Additional styles as needed for other components */
+
 }

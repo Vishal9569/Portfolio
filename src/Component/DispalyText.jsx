@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 function DynamicText() {
-    const texts = ['a Front-End Developer', 'a Software Engineer'];
+    const texts = ['a Front-End Developer', 'a Software Developer'];
     const [currentText, setCurrentText] = useState('');
     const [index, setIndex] = useState(0);
     const [charIndex, setCharIndex] = useState(0);

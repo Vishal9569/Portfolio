@@ -1,36 +1,68 @@
-import React from 'react'
+import React, { useState } from 'react';
 import { BsFillPersonFill } from "react-icons/bs";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 import { MdOutlineMail } from "react-icons/md";
 import { IoIosSend } from "react-icons/io";
-function ContactForm() {
+
+export function ContactForm() {
+    const [formStatus, setFormStatus] = useState('');
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        const form = e.target;
+
+        // Basic form validation
+        if (!form.to_name.value || !form.user_email.value || !form.message.value) {
+            alert('Please fill out all the fields.');
+            return;
+        }
+
+        setFormStatus('Form submitted!');
+        setTimeout(() => {
+            alert('Your message has been sent successfully!');
+            form.reset();
+            setFormStatus('');
+        }, 1000);
+    };
+
     return (
         <div className="ConnectMe" id="Contact">
             <h2>Connect Us</h2>
             <div className="mainForm">
                 <img src="./connect.png" alt="Connect" />
-                <form className="Contact-form" action='#'>
+                <form name="contact" netlify className="Contact-form">
                     <div className="NameDiv">
                         <p><BsFillPersonFill /> Name</p>
-                        <input type="text" />
+                        <input type="text" name="name" required />
                     </div>
 
                     <div className="EmailDiv">
                         <p><MdOutlineAlternateEmail /> Email</p>
-                        <input type="email" />
+                        <input type="email" name="email" required />
                     </div>
 
                     <div className="MessageBox">
                         <p><MdOutlineMail /> Message</p>
-                        <textarea rows="6"></textarea>
+                        <textarea rows="6" name="message" required></textarea>
                     </div>
-
-                    <button><IoIosSend />Send Message</button>
+                    <button type="submit"><IoIosSend /> Send Message</button>
                 </form>
+                <form name="contact" netlify className="Contact-form">
+                    <p>
+                        <label>Name <input type="text" name="name" /></label>
+                    </p>
+                    <p>
+                        <label>Email <input type="email" name="email" /></label>
+                    </p>
+                    <p>
+                        <button type="submit">Send</button>
+                    </p>
+                </form>
+
             </div>
         </div>
-
-    )
+    );
 }
 
 export default ContactForm;
